@@ -1,0 +1,27 @@
+[submodule "puppet/modules/redis"]
+	path = puppet/modules/redis
+	url = git@github.com:electrocucaracha/puppet-redis.git
+[submodule "puppet/modules/elasticsearch"]
+	path = puppet/modules/elasticsearch
+	url = git@github.com:electrocucaracha/puppet-elasticsearch.git
+[submodule "puppet/modules/logstash"]
+	path = puppet/modules/logstash
+	url = git@github.com:electrocucaracha/puppet-logstash.git
+[submodule "puppet/modules/kibana"]
+	path = puppet/modules/kibana
+	url = git@github.com:electrocucaracha/puppet-kibana.git
+[submodule "puppet/modules/stdlib"]
+	path = puppet/modules/stdlib
+	url = git@github.com:electrocucaracha/puppetlabs-stdlib.git
+[submodule "puppet/modules/apt"]
+	path = puppet/modules/apt
+	url = git@github.com:electrocucaracha/puppet-apt.git
+[submodule "puppet/modules/apache"]
+	path = puppet/modules/apache
+	url = git@github.com:electrocucaracha/puppetlabs-apache.git
+[submodule "puppet/modules/concat"]
+	path = puppet/modules/concat
+	url = git@github.com:electrocucaracha/puppetlabs-concat.git
+[submodule "puppet/modules/java"]
+	path = puppet/modules/java
+	url = git@github.com:electrocucaracha/puppetlabs-java.git

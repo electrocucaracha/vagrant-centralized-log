@@ -1,0 +1,554 @@
+--- !ruby/object:Puppet::Transaction::Report
+  configuration_version: 1404615660
+  environment: production
+  host: precise64
+  kind: apply
+  logs: 
+    - !ruby/object:Puppet::Util::Log
+      file: &id003 /home/vagrant/modules/apt/manifests/init.pp
+      level: !ruby/sym err
+      line: 7
+      message: &id004 "change from purged to present failed: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install python-software-properties' returned 100: E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)\nE: Unable to lock the administration directory (/var/lib/dpkg/), are you root?\n"
+      source: "/Stage[main]/Apt/Package[python-software-properties]/ensure"
+      tags: 
+        - err
+        - package
+        - python-software-properties
+        - class
+        - apt
+        - java
+      time: 2014-07-06 03:01:01.090726 +00:00
+    - !ruby/object:Puppet::Util::Log
+      file: &id001 /home/vagrant/modules/apt/manifests/ppa.pp
+      level: !ruby/sym notice
+      line: 16
+      message: "Dependency Package[python-software-properties] has failures: true"
+      source: "/Stage[main]/Java/Apt::Ppa[ppa:webupd8team/java]/Exec[add-apt-repository-ppa:webupd8team/java]"
+      tags: 
+        - notice
+        - exec
+        - apt::ppa
+        - apt
+        - ppa
+        - class
+        - java
+      time: 2014-07-06 03:01:01.094606 +00:00
+    - !ruby/object:Puppet::Util::Log
+      file: *id001
+      level: !ruby/sym warning
+      line: 16
+      message: Skipping because of failed dependencies
+      source: "/Stage[main]/Java/Apt::Ppa[ppa:webupd8team/java]/Exec[add-apt-repository-ppa:webupd8team/java]"
+      tags: 
+        - warning
+        - exec
+        - apt::ppa
+        - apt
+        - ppa
+        - class
+        - java
+      time: 2014-07-06 03:01:01.095897 +00:00
+    - !ruby/object:Puppet::Util::Log
+      file: *id001
+      level: !ruby/sym notice
+      line: 11
+      message: "Dependency Package[python-software-properties] has failures: true"
+      source: "/Stage[main]/Java/Apt::Ppa[ppa:webupd8team/java]/Exec[apt-update-ppa:webupd8team/java]"
+      tags: 
+        - notice
+        - exec
+        - apt::ppa
+        - apt
+        - ppa
+        - class
+        - java
+      time: 2014-07-06 03:01:01.096537 +00:00
+    - !ruby/object:Puppet::Util::Log
+      file: *id001
+      level: !ruby/sym warning
+      line: 11
+      message: Skipping because of failed dependencies
+      source: "/Stage[main]/Java/Apt::Ppa[ppa:webupd8team/java]/Exec[apt-update-ppa:webupd8team/java]"
+      tags: 
+        - warning
+        - exec
+        - apt::ppa
+        - apt
+        - ppa
+        - class
+        - java
+      time: 2014-07-06 03:01:01.096872 +00:00
+    - !ruby/object:Puppet::Util::Log
+      file: &id002 /home/vagrant/modules/java/manifests/init.pp
+      level: !ruby/sym notice
+      line: 13
+      message: "Dependency Package[python-software-properties] has failures: true"
+      source: "/Stage[main]/Java/Exec[set-licence-selected]"
+      tags: 
+        - notice
+        - exec
+        - set-licence-selected
+        - class
+        - java
+      time: 2014-07-06 03:01:01.097994 +00:00
+    - !ruby/object:Puppet::Util::Log
+      file: *id002
+      level: !ruby/sym warning
+      line: 13
+      message: Skipping because of failed dependencies
+      source: "/Stage[main]/Java/Exec[set-licence-selected]"
+      tags: 
+        - warning
+        - exec
+        - set-licence-selected
+        - class
+        - java
+      time: 2014-07-06 03:01:01.098334 +00:00
+    - !ruby/object:Puppet::Util::Log
+      file: *id002
+      level: !ruby/sym notice
+      line: 13
+      message: "Dependency Package[python-software-properties] has failures: true"
+      source: "/Stage[main]/Java/Exec[set-licence-seen]"
+      tags: 
+        - notice
+        - exec
+        - set-licence-seen
+        - class
+        - java
+      time: 2014-07-06 03:01:01.098991 +00:00
+    - !ruby/object:Puppet::Util::Log
+      file: *id002
+      level: !ruby/sym warning
+      line: 13
+      message: Skipping because of failed dependencies
+      source: "/Stage[main]/Java/Exec[set-licence-seen]"
+      tags: 
+        - warning
+        - exec
+        - set-licence-seen
+        - class
+        - java
+      time: 2014-07-06 03:01:01.099323 +00:00
+    - !ruby/object:Puppet::Util::Log
+      file: *id002
+      level: !ruby/sym notice
+      line: 17
+      message: "Dependency Package[python-software-properties] has failures: true"
+      source: "/Stage[main]/Java/Package[oracle-java7-installer]"
+      tags: 
+        - notice
+        - package
+        - oracle-java7-installer
+        - class
+        - java
+      time: 2014-07-06 03:01:01.100359 +00:00
+    - !ruby/object:Puppet::Util::Log
+      file: *id002
+      level: !ruby/sym warning
+      line: 17
+      message: Skipping because of failed dependencies
+      source: "/Stage[main]/Java/Package[oracle-java7-installer]"
+      tags: 
+        - warning
+        - package
+        - oracle-java7-installer
+        - class
+        - java
+      time: 2014-07-06 03:01:01.100672 +00:00
+    - !ruby/object:Puppet::Util::Log
+      level: !ruby/sym notice
+      message: Finished catalog run in 0.25 seconds
+      source: Puppet
+      tags: 
+        - notice
+      time: 2014-07-06 03:01:01.126214 +00:00
+  metrics: 
+    events: !ruby/object:Puppet::Util::Metric
+      label: Events
+      name: events
+      values: 
+        - - failure
+          - Failure
+          - 1
+        - - success
+          - Success
+          - 0
+        - - total
+          - Total
+          - 1
+    changes: !ruby/object:Puppet::Util::Metric
+      label: Changes
+      name: changes
+      values: 
+        - - total
+          - Total
+          - 0
+    resources: !ruby/object:Puppet::Util::Metric
+      label: Resources
+      name: resources
+      values: 
+        - - out_of_sync
+          - Out of sync
+          - 1
+        - - skipped
+          - Skipped
+          - 11
+        - - scheduled
+          - Scheduled
+          - 0
+        - - changed
+          - Changed
+          - 0
+        - - failed_to_restart
+          - Failed to restart
+          - 0
+        - - failed
+          - Failed
+          - 1
+        - - restarted
+          - Restarted
+          - 0
+        - - total
+          - Total
+          - 16
+    time: !ruby/object:Puppet::Util::Metric
+      label: Time
+      name: time
+      values: 
+        - - exec
+          - Exec
+          - 0.000278
+        - - filebucket
+          - Filebucket
+          - 0.000196
+        - - config_retrieval
+          - Config retrieval
+          - 0.435632
+        - - file
+          - File
+          - 0.001652
+        - - total
+          - Total
+          - 0.476223
+        - - package
+          - Package
+          - 0.038465
+  puppet_version: 2.7.19
+  report_format: 2
+  resource_statuses: 
+    "Schedule[puppet]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: 
+      line: 
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Schedule[puppet]"
+      resource_type: Schedule
+      skipped: true
+      tags: 
+        - schedule
+        - puppet
+      time: 2014-07-06 03:01:01.101551 +00:00
+      title: puppet
+    "Filebucket[puppet]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      evaluation_time: 0.000196
+      events: []
+      failed: false
+      file: 
+      line: 
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Filebucket[puppet]"
+      resource_type: Filebucket
+      skipped: false
+      tags: 
+        - filebucket
+        - puppet
+      time: 2014-07-06 03:01:01.026589 +00:00
+      title: puppet
+    "Exec[set-licence-seen]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: *id002
+      line: 13
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Exec[set-licence-seen]"
+      resource_type: Exec
+      skipped: true
+      tags: 
+        - exec
+        - set-licence-seen
+        - class
+        - java
+      time: 2014-07-06 03:01:01.098804 +00:00
+      title: set-licence-seen
+    "File[sources.list]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      evaluation_time: 0.000908
+      events: []
+      failed: false
+      file: *id003
+      line: 15
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "File[sources.list]"
+      resource_type: File
+      skipped: false
+      tags: 
+        - file
+        - sources.list
+        - class
+        - apt
+        - java
+      time: 2014-07-06 03:01:01.034969 +00:00
+      title: sources.list
+    "Schedule[hourly]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: 
+      line: 
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Schedule[hourly]"
+      resource_type: Schedule
+      skipped: true
+      tags: 
+        - schedule
+        - hourly
+      time: 2014-07-06 03:01:00.987074 +00:00
+      title: hourly
+    "Exec[add-apt-repository-ppa:webupd8team/java]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: *id001
+      line: 16
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Exec[add-apt-repository-ppa:webupd8team/java]"
+      resource_type: Exec
+      skipped: true
+      tags: 
+        - exec
+        - apt::ppa
+        - apt
+        - ppa
+        - class
+        - java
+      time: 2014-07-06 03:01:01.094603 +00:00
+      title: add-apt-repository-ppa:webupd8team/java
+    "File[sources.list.d]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      evaluation_time: 0.000744
+      events: []
+      failed: false
+      file: *id003
+      line: 22
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "File[sources.list.d]"
+      resource_type: File
+      skipped: false
+      tags: 
+        - file
+        - sources.list.d
+        - class
+        - apt
+        - java
+      time: 2014-07-06 03:01:01.091676 +00:00
+      title: sources.list.d
+    "Package[oracle-java7-installer]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: *id002
+      line: 17
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Package[oracle-java7-installer]"
+      resource_type: Package
+      skipped: true
+      tags: 
+        - package
+        - oracle-java7-installer
+        - class
+        - java
+      time: 2014-07-06 03:01:01.100100 +00:00
+      title: oracle-java7-installer
+    "Package[python-software-properties]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      evaluation_time: 0.038465
+      events: 
+        - !ruby/object:Puppet::Transaction::Event
+          audited: false
+          desired_value: !ruby/sym present
+          historical_value: 
+          message: *id004
+          name: !ruby/sym package_installed
+          previous_value: !ruby/sym purged
+          property: ensure
+          status: failure
+          time: 2014-07-06 03:01:01.076872 +00:00
+      failed: true
+      file: *id003
+      line: 7
+      out_of_sync: true
+      out_of_sync_count: 1
+      resource: "Package[python-software-properties]"
+      resource_type: Package
+      skipped: false
+      tags: 
+        - package
+        - python-software-properties
+        - class
+        - apt
+        - java
+      time: 2014-07-06 03:01:01.052585 +00:00
+      title: python-software-properties
+    "Exec[apt-update-ppa:webupd8team/java]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: *id001
+      line: 11
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Exec[apt-update-ppa:webupd8team/java]"
+      resource_type: Exec
+      skipped: true
+      tags: 
+        - exec
+        - apt::ppa
+        - apt
+        - ppa
+        - class
+        - java
+      time: 2014-07-06 03:01:01.096356 +00:00
+      title: apt-update-ppa:webupd8team/java
+    "Schedule[monthly]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: 
+      line: 
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Schedule[monthly]"
+      resource_type: Schedule
+      skipped: true
+      tags: 
+        - schedule
+        - monthly
+      time: 2014-07-06 03:01:00.986839 +00:00
+      title: monthly
+    "Schedule[weekly]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: 
+      line: 
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Schedule[weekly]"
+      resource_type: Schedule
+      skipped: true
+      tags: 
+        - schedule
+        - weekly
+      time: 2014-07-06 03:01:01.093397 +00:00
+      title: weekly
+    "Schedule[never]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: 
+      line: 
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Schedule[never]"
+      resource_type: Schedule
+      skipped: true
+      tags: 
+        - schedule
+        - never
+      time: 2014-07-06 03:01:01.026191 +00:00
+      title: never
+    "Schedule[daily]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: 
+      line: 
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Schedule[daily]"
+      resource_type: Schedule
+      skipped: true
+      tags: 
+        - schedule
+        - daily
+      time: 2014-07-06 03:01:00.986514 +00:00
+      title: daily
+    "Exec[apt_update]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      evaluation_time: 0.000278
+      events: []
+      failed: false
+      file: *id003
+      line: 28
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Exec[apt_update]"
+      resource_type: Exec
+      skipped: false
+      tags: 
+        - exec
+        - apt_update
+        - class
+        - apt
+        - java
+      time: 2014-07-06 03:01:01.092938 +00:00
+      title: apt_update
+    "Exec[set-licence-selected]": !ruby/object:Puppet::Resource::Status
+      change_count: 0
+      changed: false
+      events: []
+      failed: false
+      file: *id002
+      line: 13
+      out_of_sync: false
+      out_of_sync_count: 0
+      resource: "Exec[set-licence-selected]"
+      resource_type: Exec
+      skipped: true
+      tags: 
+        - exec
+        - set-licence-selected
+        - class
+        - java
+      time: 2014-07-06 03:01:01.097791 +00:00
+      title: set-licence-selected
+  status: failed
+  time: 2014-07-06 03:01:00.871669 +00:00

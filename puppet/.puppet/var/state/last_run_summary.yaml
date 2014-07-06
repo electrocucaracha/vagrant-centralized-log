@@ -1,0 +1,27 @@
+--- 
+  changes: 
+    total: 0
+  events: 
+    failure: 1
+    success: 0
+    total: 1
+  version: 
+    config: 1404615660
+    puppet: 2.7.19
+  resources: 
+    skipped: 11
+    out_of_sync: 1
+    scheduled: 0
+    failed_to_restart: 0
+    failed: 1
+    changed: 0
+    restarted: 0
+    total: 16
+  time: 
+    exec: 0.000278
+    filebucket: 0.000196
+    config_retrieval: 0.435632
+    file: 0.001652
+    last_run: 1404615661
+    total: 0.476223
+    package: 0.038465
